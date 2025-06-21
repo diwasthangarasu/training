@@ -16,14 +16,14 @@ class WaterTank {
         try { wait(); } catch (InterruptedException e) {}
         while (currentLevel > 0) {
             currentLevel -= 10;
-            System.out.println("Draining... Current Level: " + currentLevm el + " liters");
+            System.out.println("Draining... Current Level: " + currentLevel + " liters");
             try { Thread.sleep(500); } catch (InterruptedException e) {}
         }
         System.out.println("Tank empty. Stopping outlet.");
     }
 }
 
-public class WaterTank {
+public class WaterTank2 {
     public static void main(String[] args) {
         WaterTank tank = new WaterTank();
 
